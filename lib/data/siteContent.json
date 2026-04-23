@@ -1,0 +1,77 @@
+{
+  "hero": {
+    "title": "Build Young Minds Through Chess",
+    "description": "Strategy. Focus. Confidence. We coach the next generation of champions from beginner to advanced — with certified FIDE trainers in Anantapur.",
+    "ctaPrimary": "Start Learning Now",
+    "ctaSecondary": "Enroll Now"
+  },
+  "contact": {
+    "phone": "+91 98850 06568",
+    "email": "chessunified1@gmail.com",
+    "address": "Door No.1/696 Rudrampeta Bypass, Near Balaji School (Back Side), Anantapur, AP 515004",
+    "whatsapp": "919885006568",
+    "instagram": "https://instagram.com/chessunified",
+    "facebook": "#",
+    "youtube": "#",
+    "twitter": "#"
+  },
+  "sections": {
+    "about": true,
+    "programs": true,
+    "whyChess": true,
+    "trainers": true,
+    "gallery": true,
+    "tournaments": true,
+    "franchise": true,
+    "specialCamps": true,
+    "merchandise": true,
+    "socialMediaSection": true
+  },
+  "features": [
+    "We offer both online and offline classes",
+    "Beginner to advance levels",
+    "Structured curriculum",
+    "Certified trainers",
+    "International FIDE rated players will train"
+  ],
+  "gallery": [
+    "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776946653/chess-unified/jsllhhv42cn3lolpnzr7.jpg",
+    "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776946977/chess-unified/jh97ggrdcwabnt6ccecn.jpg",
+    "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776947105/chess-unified/a0nzeatp6tngmienscdk.jpg",
+    "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776947797/chess-unified/miinc5kok0wj7v3ydjty.jpg",
+    "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776950530/chess-unified/a5pqw6awfw6buw4yc9dg.jpg"
+  ],
+  "logoUrl": "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776945992/chess-unified/myyt2nsumr6hfby43mvt.png",
+  "specialCamps": [
+    {
+      "title": "Summer Grandmaster Camp",
+      "date": "April 24 - May24",
+      "description": "An intensive 30-day program for aspiring champions. Master advanced openings and deep calculation with our FIDE certified trainers.",
+      "bannerUrl": "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776946283/chess-unified/n0hnspc7hwiki3czt4yr.png"
+    }
+  ],
+  "merchandise": [
+    {
+      "id": "1",
+      "name": "Professional Chess Set",
+      "price": "499/-",
+      "description": "Tournament quality weighted chess pieces with a durable rollup board.",
+      "imageUrl": "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776946314/chess-unified/lfblytuyhs2c0cahafir.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Chess Notion Book",
+      "price": "499",
+      "description": "Premium journal for recording your games and analyzing your moves.",
+      "imageUrl": "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776946429/chess-unified/vbxghhsjxse04kzzbrap.jpg"
+    }
+  ],
+  "socialMediaSection": {
+    "instagram": "https://instagram.com/chessunified",
+    "facebook": "https://facebook.com/chessunified",
+    "youtube": "",
+    "images": [
+      "https://res.cloudinary.com/dmgkhmynj/image/upload/v1776951610/chess-unified/cut6o8guaxjdnij5ibio.png"
+    ]
+  }
+}
