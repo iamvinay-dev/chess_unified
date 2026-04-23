@@ -48,7 +48,7 @@ export function Contact({ info }: { info?: SiteContent['contact'] }) {
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div>
-            <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter uppercase leading-[0.85]">
+            <h2 className="text-4xl sm:text-5xl md:text-7xl font-black mb-8 tracking-tighter uppercase leading-[0.85]">
               Start Your <span className="text-primary italic">Journey</span>
             </h2>
             <p className="text-xl text-gray-500 mb-16 max-w-lg leading-relaxed font-medium">
@@ -97,7 +97,7 @@ export function Contact({ info }: { info?: SiteContent['contact'] }) {
             </div>
 
             {info?.locationImages && info.locationImages.length > 0 && (
-              <div className="mt-16 pt-16 border-t border-gray-100">
+              <div className="mt-16 pt-16 border-t border-gray-100 hidden lg:block">
                 <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-8">
                   Our Academy Locations
                 </h4>
@@ -116,6 +116,22 @@ export function Contact({ info }: { info?: SiteContent['contact'] }) {
           <div className="relative">
              <div className="absolute inset-0 bg-primary/5 rounded-[4rem] blur-3xl -z-10" />
              <WhatsAppEnrollForm />
+             
+             {/* Mobile Location Images */}
+             {info?.locationImages && info.locationImages.length > 0 && (
+               <div className="mt-16 lg:hidden">
+                 <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-gray-400 mb-6 text-center">
+                   Our Academy Locations
+                 </h4>
+                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                   {info.locationImages.map((img, idx) => (
+                     <div key={idx} className="relative aspect-video rounded-3xl overflow-hidden border border-gray-100 shadow-sm">
+                       <img src={img} alt="Academy Location" className="w-full h-full object-cover" />
+                     </div>
+                   ))}
+                 </div>
+               </div>
+             )}
           </div>
         </div>
       </div>

@@ -106,46 +106,46 @@ export function WhyChess() {
           </div>
         </div>
 
-        <div className="mt-24 md:mt-40 bg-primary rounded-[4rem] md:rounded-[5rem] p-12 md:p-28 relative overflow-hidden text-white shadow-3xl">
+        <div className="mt-16 md:mt-40 bg-primary rounded-[3rem] md:rounded-[5rem] p-8 md:p-28 relative overflow-hidden text-white shadow-3xl">
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/5 rounded-full blur-[150px] -translate-y-1/2 translate-x-1/4" />
           
-          <div className="relative z-10 grid lg:grid-cols-2 gap-20 md:gap-32 items-center">
+          <div className="relative z-10 grid lg:grid-cols-2 gap-16 md:gap-32 items-center">
             <div>
-              <div className="text-9xl font-black mb-8 opacity-20 leading-none">“</div>
-              <h3 className="text-4xl md:text-6xl font-black mb-12 italic leading-[1.1] tracking-tighter">
+              <div className="text-6xl md:text-9xl font-black mb-4 md:mb-8 opacity-20 leading-none">“</div>
+              <h3 className="text-3xl md:text-6xl font-black mb-8 md:mb-12 italic leading-[1.1] tracking-tighter">
                 "Chess is the gymnasium of the mind."
               </h3>
-              <p className="text-xl md:text-2xl text-white/80 font-medium leading-relaxed mb-12">
+              <p className="text-lg md:text-2xl text-white/80 font-medium leading-relaxed mb-10 md:mb-12">
                 Scientific research confirms that children immersed in chess demonstrate remarkable growth in cognitive flexibility and academic performance.
               </p>
-              <div className="flex items-center gap-6">
-                <div className="w-20 h-20 bg-white/20 rounded-[2rem] flex items-center justify-center font-black text-white text-3xl border border-white/20 shadow-inner">
+              <div className="flex items-center gap-4 md:gap-6">
+                <div className="w-16 h-16 md:w-20 md:h-20 bg-white/20 rounded-[1.5rem] md:rounded-[2rem] flex items-center justify-center font-black text-white text-xl md:text-3xl border border-white/20 shadow-inner shrink-0">
                   BP
                 </div>
                 <div>
-                  <div className="font-black text-2xl">Blaise Pascal</div>
-                  <div className="text-xs font-black uppercase tracking-[0.3em] text-white/50">
+                  <div className="font-black text-lg md:text-2xl">Blaise Pascal</div>
+                  <div className="text-[10px] font-black uppercase tracking-[0.2em] text-white/50">
                     Philosopher & Scientist
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-6 md:gap-8">
+            <div className="grid grid-cols-2 gap-4 md:gap-8">
               {[
                 { value: '17%', label: 'Memory Growth' },
-                { value: '92%', label: 'Sustained Focus' },
+                { value: '92%', label: 'Focus' },
                 { value: '2.5x', label: 'Math Aptitude' },
-                { value: '100%', label: 'Total Focus' },
+                { value: '100%', label: 'Dedication' },
               ].map((stat, i) => (
                 <div
                   key={i}
-                  className="bg-white/10 backdrop-blur-md p-8 md:p-12 rounded-[3rem] border border-white/10 hover:bg-white/20 transition-all shadow-lg"
+                  className="bg-white/10 backdrop-blur-md p-6 md:p-12 rounded-[2rem] md:rounded-[3rem] border border-white/10 hover:bg-white/20 transition-all shadow-lg"
                 >
-                  <div className="text-4xl md:text-5xl font-black text-white mb-3 tracking-tighter">
+                  <div className="text-2xl md:text-5xl font-black text-white mb-2 tracking-tighter">
                     {stat.value}
                   </div>
-                  <p className="text-xs font-black text-white/60 uppercase tracking-[0.2em]">
+                  <p className="text-[9px] md:text-xs font-black text-white/60 uppercase tracking-[0.1em] md:tracking-[0.2em] leading-tight">
                     {stat.label}
                   </p>
                 </div>

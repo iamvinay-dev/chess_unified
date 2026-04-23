@@ -27,12 +27,12 @@ export function Hero({
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-20">
           <div className="flex-1 text-left">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] font-black mb-6 tracking-tighter leading-[0.85] text-black uppercase">
+            <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-black mb-6 tracking-tighter leading-[0.85] text-black uppercase">
               {title || (
                 <>
                   Build <span className="text-primary">Minds</span>
                   <br />
-                  Through <span className="text-gray-200">Chess</span>
+                  Through <span className="text-gray-900/10">Chess</span>
                 </>
               )}
             </h1>

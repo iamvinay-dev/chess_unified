@@ -85,17 +85,17 @@ export default function EditSitePage() {
 
   return (
     <div className="space-y-8 pb-20">
-      <div className="flex items-center justify-between sticky top-0 bg-gray-50/80 backdrop-blur-md py-4 z-20 border-b">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between sticky top-0 bg-gray-50/80 backdrop-blur-md py-4 z-20 border-b gap-4">
         <div>
-          <h1 className="text-3xl font-bold">Edit Site Content</h1>
-          <p className="text-sm text-gray-500">Customize the text, images, and visibility of your website.</p>
+          <h1 className="text-2xl md:text-3xl font-bold">Edit Site Content</h1>
+          <p className="text-xs md:text-sm text-gray-500">Customize text, images, and visibility.</p>
         </div>
         <button
           onClick={handleSave}
           disabled={saving}
-          className="bg-primary text-white px-8 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 hover:scale-105 transition-all disabled:opacity-50"
+          className="w-full sm:w-auto bg-primary text-white px-6 md:px-8 py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-primary/20 hover:scale-105 transition-all disabled:opacity-50"
         >
-          {saving ? <Loader2 size={20} className="animate-spin" /> : <Save size={20} />}
+          {saving ? <Loader2 size={18} className="animate-spin" /> : <Save size={18} />}
           {success ? 'Saved!' : 'Save Changes'}
         </button>
       </div>
@@ -103,10 +103,10 @@ export default function EditSitePage() {
       <div className="grid lg:grid-cols-3 gap-8">
         <div className="lg:col-span-2 space-y-8">
           {/* Brand Identity */}
-          <section className="bg-white rounded-3xl p-8 border shadow-sm">
-            <div className="flex items-center gap-3 mb-8 text-primary">
-              <Box size={24} />
-              <h2 className="text-xl font-bold">Brand Identity</h2>
+          <section className="bg-white rounded-3xl p-6 md:p-8 border shadow-sm">
+            <div className="flex items-center gap-3 mb-6 md:mb-8 text-primary">
+              <Box size={20} className="md:w-6 md:h-6" />
+              <h2 className="text-lg md:text-xl font-bold">Brand Identity</h2>
             </div>
             <div className="space-y-6">
               <div className="space-y-2">

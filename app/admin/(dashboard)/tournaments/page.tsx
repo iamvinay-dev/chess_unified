@@ -140,7 +140,7 @@ export default function AdminTournamentsPage() {
           </div>
         </div>
 
-        <div className="overflow-x-auto">
+        <div className="hidden md:block overflow-x-auto text-nowrap">
           <table className="w-full text-left">
             <thead>
               <tr className="border-b bg-gray-50/50 text-xs font-bold uppercase tracking-widest text-gray-400">
@@ -151,7 +151,7 @@ export default function AdminTournamentsPage() {
                 <th className="px-8 py-5 text-right">Actions</th>
               </tr>
             </thead>
-            <tbody className="divide-y">
+            <tbody className="divide-y text-nowrap">
               {tournaments.map((t) => (
                 <tr key={t.id} className="hover:bg-gray-50/50 transition-colors group">
                   <td className="px-8 py-6">
@@ -217,19 +217,54 @@ export default function AdminTournamentsPage() {
                   </td>
                 </tr>
               ))}
-              {tournaments.length === 0 && (
-                <tr>
-                  <td colSpan={5} className="px-8 py-20 text-center">
-                    <div className="flex flex-col items-center gap-3 text-gray-400">
-                      <Trophy size={48} className="opacity-20" />
-                      <div className="font-medium">No tournaments found. Create your first one!</div>
-                    </div>
-                  </td>
-                </tr>
-              )}
             </tbody>
           </table>
         </div>
+
+        {/* Mobile View */}
+        <div className="md:hidden divide-y">
+          {tournaments.map((t) => (
+            <div key={t.id} className="p-6 space-y-4">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary relative overflow-hidden">
+                    {t.bannerUrl ? <Image src={t.bannerUrl} alt={t.title} fill className="object-cover" /> : <Trophy size={16} />}
+                  </div>
+                  <div>
+                    <div className="font-bold text-sm">{t.title}</div>
+                    <div className="text-[10px] text-gray-400">{t.ageGroups}</div>
+                  </div>
+                </div>
+                <div
+                  className={cn(
+                    'px-2 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider',
+                    t.status === 'open' ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                  )}
+                >
+                  {t.status}
+                </div>
+              </div>
+              <div className="flex justify-between items-end">
+                <div className="text-[11px] text-gray-500 font-medium">
+                  <Calendar size={12} className="inline mr-1" /> {t.date}
+                  <div className="mt-1 opacity-70 truncate max-w-[150px]">{t.venue}</div>
+                </div>
+                <div className="flex gap-2">
+                  <button onClick={() => handleOpenModal(t)} className="p-2 bg-gray-50 rounded-lg text-gray-400"><Edit2 size={16} /></button>
+                  <button onClick={() => handleDelete(t.id)} className="p-2 bg-red-50 text-red-500 rounded-lg"><Trash2 size={16} /></button>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {tournaments.length === 0 && (
+          <div className="p-20 text-center flex flex-col items-center gap-3 text-gray-400">
+            <Trophy size={48} className="opacity-20" />
+            <div className="font-medium">No tournaments found.</div>
+          </div>
+        )}
+
       </div>
 
       {/* Modal */}
