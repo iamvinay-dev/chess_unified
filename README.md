@@ -24,4 +24,4 @@ npm run dev
 ```
 
 ---
-*Created with ❤️ for Chess Unified*
+*Created with ❤️ for Chess Unified* tha
