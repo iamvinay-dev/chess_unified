@@ -1,13 +1,16 @@
 'use client';
 
 import * as React from 'react';
-import { Settings, Shield, Bell, RefreshCw, Loader2, Save, AlertCircle, CheckCircle2 } from 'lucide-react';
+import { Settings, Shield, Bell, RefreshCw, Loader2, Save, AlertCircle, CheckCircle2, Eye, EyeOff } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export default function AdminSettingsPage() {
   const [currentPassword, setCurrentPassword] = React.useState('');
   const [newPassword, setNewPassword] = React.useState('');
   const [confirmPassword, setConfirmPassword] = React.useState('');
+  const [showCurrent, setShowCurrent] = React.useState(false);
+  const [showNew, setShowNew] = React.useState(false);
+  const [showConfirm, setShowConfirm] = React.useState(false);
   const [saving, setSaving] = React.useState(false);
   const [message, setMessage] = React.useState<{ type: 'success' | 'error'; text: string } | null>(null);
 
@@ -80,38 +83,65 @@ export default function AdminSettingsPage() {
 
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-widest text-gray-400 ml-1">Current Password</label>
-              <input 
-                required
-                type="password" 
-                placeholder="••••••••" 
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl px-5 py-4 outline-none focus:border-primary transition-all shadow-sm"
-                value={currentPassword}
-                onChange={(e) => setCurrentPassword(e.target.value)}
-              />
+              <div className="relative">
+                <input 
+                  required
+                  type={showCurrent ? 'text' : 'password'} 
+                  placeholder="••••••••" 
+                  className="w-full bg-gray-50 border border-gray-100 rounded-xl px-5 py-4 outline-none focus:border-primary transition-all shadow-sm pr-12"
+                  value={currentPassword}
+                  onChange={(e) => setCurrentPassword(e.target.value)}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowCurrent(!showCurrent)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors"
+                >
+                  {showCurrent ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
             </div>
 
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-widest text-gray-400 ml-1">New Password</label>
-              <input 
-                required
-                type="password" 
-                placeholder="••••••••" 
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl px-5 py-4 outline-none focus:border-primary transition-all shadow-sm"
-                value={newPassword}
-                onChange={(e) => setNewPassword(e.target.value)}
-              />
+              <div className="relative">
+                <input 
+                  required
+                  type={showNew ? 'text' : 'password'} 
+                  placeholder="••••••••" 
+                  className="w-full bg-gray-50 border border-gray-100 rounded-xl px-5 py-4 outline-none focus:border-primary transition-all shadow-sm pr-12"
+                  value={newPassword}
+                  onChange={(e) => setNewPassword(e.target.value)}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowNew(!showNew)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors"
+                >
+                  {showNew ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
             </div>
 
             <div className="space-y-2">
               <label className="text-xs font-bold uppercase tracking-widest text-gray-400 ml-1">Confirm New Password</label>
-              <input 
-                required
-                type="password" 
-                placeholder="••••••••" 
-                className="w-full bg-gray-50 border border-gray-100 rounded-xl px-5 py-4 outline-none focus:border-primary transition-all shadow-sm"
-                value={confirmPassword}
-                onChange={(e) => setConfirmPassword(e.target.value)}
-              />
+              <div className="relative">
+                <input 
+                  required
+                  type={showConfirm ? 'text' : 'password'} 
+                  placeholder="••••••••" 
+                  className="w-full bg-gray-50 border border-gray-100 rounded-xl px-5 py-4 outline-none focus:border-primary transition-all shadow-sm pr-12"
+                  value={confirmPassword}
+                  onChange={(e) => setConfirmPassword(e.target.value)}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowConfirm(!showConfirm)}
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors"
+                >
+                  {showConfirm ? <EyeOff size={18} /> : <Eye size={18} />}
+                </button>
+              </div>
             </div>
 
             <button 

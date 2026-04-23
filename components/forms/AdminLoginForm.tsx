@@ -2,10 +2,11 @@
 
 import * as React from 'react';
 import { useRouter } from 'next/navigation';
-import { Lock, Loader2, AlertCircle } from 'lucide-react';
+import { Lock, Loader2, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 export function AdminLoginForm() {
   const [password, setPassword] = React.useState('');
+  const [showPassword, setShowPassword] = React.useState(false);
   const [loading, setLoading] = React.useState(false);
   const [error, setError] = React.useState(false);
   const router = useRouter();
@@ -57,14 +58,24 @@ export function AdminLoginForm() {
         <form onSubmit={handleLogin} className="space-y-6">
           <div className="space-y-2">
             <label className="text-xs font-bold uppercase tracking-widest text-gray-500 ml-1">Password</label>
-            <input
-              required
-              type="password"
-              placeholder="••••••••"
-              className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
+            <div className="relative">
+              <input
+                required
+                type={showPassword ? 'text' : 'password'}
+                placeholder="••••••••"
+                className="w-full bg-gray-50 border border-gray-200 rounded-xl px-5 py-4 focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all pr-12"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-primary transition-colors"
+                aria-label={showPassword ? 'Hide password' : 'Show password'}
+              >
+                {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
+              </button>
+            </div>
           </div>
 
           <button
@@ -94,3 +105,4 @@ export function AdminLoginForm() {
     </div>
   );
 }
+
