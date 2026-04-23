@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server';
 import { readJSON, writeJSON } from '@/lib/data-manager';
+import { Student } from '@/lib/types';
 
 const FILENAME = 'students.json';
 
 export async function GET() {
-  const data = await readJSON(FILENAME, []);
+  const data = await readJSON<Student[]>(FILENAME, []);
   return NextResponse.json(data);
 }
 
@@ -17,3 +18,4 @@ export async function PUT(request: Request) {
     return NextResponse.json({ success: false, message: 'Failed to update' }, { status: 500 });
   }
 }
+
