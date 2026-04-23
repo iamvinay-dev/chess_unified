@@ -35,7 +35,7 @@ export default async function HomePage() {
       {sections.tournaments && <Tournaments tournaments={tournaments} />}
       {sections.franchise && <Franchise />}
       {sections.socialMediaSection && <SocialMedia data={content.socialMediaSection} />}
-      <Contact info={content.contact} logoUrl={content.logoUrl} />
+      <Contact info={content.contact} />
     </>
   );
 }
