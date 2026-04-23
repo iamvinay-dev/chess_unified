@@ -25,3 +25,4 @@ npm run dev
 
 ---
 *Created with ❤️ for Chess Unified* tha
+deploy from termux again
