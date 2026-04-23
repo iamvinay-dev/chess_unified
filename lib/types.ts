@@ -75,4 +75,5 @@ export interface SiteContent {
     youtube: string;
     images: string[];
   };
+  youtubeVideos?: string[];
 }

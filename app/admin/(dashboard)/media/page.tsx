@@ -68,7 +68,7 @@ export default function MediaManagerPage() {
 
   const removeYoutube = (id: string) => {
     if (!data) return;
-    const newData = { ...data, youtubeVideos: data.youtubeVideos.filter((v: string) => v !== id) };
+    const newData = { ...data, youtubeVideos: (data.youtubeVideos || []).filter((v: string) => v !== id) };
     saveChanges(newData);
   };
 
@@ -112,6 +112,58 @@ export default function MediaManagerPage() {
         </div>
       </section>
 
+      <section className="space-y-6">
+        <div className="flex items-center justify-between">
+          <h2 className="text-2xl font-bold flex items-center gap-2">
+            <Video className="text-primary" /> YouTube Videos
+          </h2>
+        </div>
+
+        <div className="flex gap-4">
+          <input 
+            placeholder="Paste YouTube Link (e.g. https://www.youtube.com/watch?v=...)"
+            className="flex-1 bg-white border rounded-xl px-5 py-3 outline-none focus:border-primary transition-all"
+            value={newYoutube}
+            onChange={(e) => setNewYoutube(e.target.value)}
+          />
+          <button 
+            onClick={addYoutube}
+            className="bg-primary text-white px-8 py-3 rounded-xl font-bold flex items-center gap-2 shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all outline-none"
+          >
+            <PlusCircle size={20} /> Add Video
+          </button>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {(data.youtubeVideos || []).map((id) => (
+            <div key={id} className="bg-white rounded-3xl border overflow-hidden group relative shadow-sm">
+              <div className="aspect-video">
+                <iframe
+                  className="w-full h-full"
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                <button 
+                  onClick={() => removeYoutube(id)}
+                  className="bg-red-500 text-white p-2 rounded-xl shadow-lg"
+                >
+                  <Trash2 size={16} />
+                </button>
+              </div>
+            </div>
+          ))}
+          {(data.youtubeVideos || []).length === 0 && (
+            <div className="col-span-full py-12 text-center border-2 border-dashed rounded-[2.5rem] text-gray-400 font-medium">
+              No videos added yet. Paste a link above to start your video library.
+            </div>
+          )}
+        </div>
+      </section>
     </div>
   );
 }
