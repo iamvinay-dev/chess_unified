@@ -24,13 +24,14 @@ export async function getSiteContent(): Promise<SiteContent> {
       whyChess: true,
       trainers: false,
       gallery: true,
-      youtube: false,
       tournaments: true,
       franchise: true,
-      specialCamps: true
+      specialCamps: true,
+      socialMediaSection: true
     },
     gallery: [],
     youtubeVideos: [],
+    merchandise: [],
     specialCamps: [
       {
         title: "Summer Grandmaster Camp",
