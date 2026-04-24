@@ -13,7 +13,7 @@ export function Merchandise({ items }: MerchandiseProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section id="shop" className="py-24 md:py-40 bg-gray-50 scroll-mt-24">
+    <section id="shop" className="py-16 md:py-32 bg-gray-50 scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-20 md:mb-32">
           <div className="max-w-2xl">

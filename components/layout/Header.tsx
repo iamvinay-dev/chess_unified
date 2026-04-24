@@ -98,7 +98,7 @@ export function Header({ logoUrl }: { logoUrl?: string }) {
       {/* Mobile Nav Overlay */}
       <div
         className={cn(
-          'fixed inset-0 bg-white z-40 md:hidden transition-all duration-500 flex flex-col items-center justify-center px-6',
+          'fixed inset-0 bg-white z-40 md:hidden transition-all duration-500 flex flex-col items-center pt-32 pb-10 px-6 overflow-y-auto',
           isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         )}
       >
@@ -111,10 +111,10 @@ export function Header({ logoUrl }: { logoUrl?: string }) {
               href={link.href}
               onClick={() => setIsOpen(false)}
               className={cn(
-                "text-4xl font-black uppercase tracking-tighter hover:text-primary transition-all duration-300",
+                "text-2xl font-black uppercase tracking-tighter hover:text-primary transition-all duration-300",
                 isOpen ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
               )}
-              style={{ transitionDelay: `${idx * 100}ms` }}
+              style={{ transitionDelay: `${idx * 50}ms` }}
             >
               {link.name}
             </a>

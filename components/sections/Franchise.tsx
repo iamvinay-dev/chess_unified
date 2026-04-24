@@ -9,7 +9,7 @@ export function Franchise() {
   const whatsappLink = `https://wa.me/919885006568?text=${encodeURIComponent("I want to talk about the franchise opportunity")}`;
 
   return (
-    <section id="franchise" className="py-20 md:py-32 bg-gray-50/50 scroll-mt-24">
+    <section id="franchise" className="py-16 md:py-32 bg-gray-50/50 scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="bg-primary rounded-[3rem] md:rounded-[5rem] overflow-hidden relative shadow-2xl shadow-primary/30 text-white p-10 md:p-24">
           <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:32px_32px] opacity-5" />

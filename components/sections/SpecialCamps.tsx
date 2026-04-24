@@ -9,7 +9,7 @@ export function SpecialCamps({ camps = [] }: { camps?: SpecialCamp[] }) {
   if (!camps || camps.length === 0) return null;
 
   return (
-    <section id="camps" className="py-20 md:py-32 bg-white">
+    <section id="camps" className="py-16 md:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-3xl">

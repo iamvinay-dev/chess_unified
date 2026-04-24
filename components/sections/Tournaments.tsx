@@ -10,7 +10,7 @@ export function Tournaments({ tournaments = [] }: { tournaments?: Tournament[] }
   if (!tournaments || tournaments.length === 0) return null;
 
   return (
-    <section id="tournaments" className="py-20 md:py-32 bg-white overflow-hidden scroll-mt-24">
+    <section id="tournaments" className="py-16 md:py-32 bg-white overflow-hidden scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-20">
           <div className="inline-flex items-center gap-2 bg-primary/5 border border-primary/10 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-primary mb-6">

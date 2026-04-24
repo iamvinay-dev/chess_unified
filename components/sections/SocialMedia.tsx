@@ -12,7 +12,7 @@ export function SocialMedia({ data }: SocialMediaProps) {
   if (!data) return null;
 
   return (
-    <section id="social" className="py-24 bg-white border-t border-gray-100 scroll-mt-24">
+    <section id="social" className="py-16 md:py-24 bg-white border-t border-gray-100 scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center justify-center gap-2 text-pink-500 font-bold tracking-widest uppercase text-xs mb-4 bg-pink-50 px-6 py-2 rounded-full border border-pink-100">

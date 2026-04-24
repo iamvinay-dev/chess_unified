@@ -25,7 +25,7 @@ const trainers = [
 
 export function Trainers() {
   return (
-    <section id="trainers" className="py-32 bg-white">
+    <section id="trainers" className="py-16 md:py-32 bg-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-3xl">

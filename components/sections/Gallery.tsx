@@ -74,7 +74,7 @@ export function Gallery({ images = [] }: { images?: string[] }) {
   return (
     <section 
       id="gallery" 
-      className="pb-32 bg-gray-50/50 border-b border-gray-100 scroll-mt-24 overflow-hidden"
+      className="pb-16 md:pb-32 bg-gray-50/50 border-b border-gray-100 scroll-mt-24 overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >

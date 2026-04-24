@@ -16,13 +16,13 @@ export function Hero({
   ctaSecondary?: string;
 }) {
   return (
-    <section className="relative min-h-[85vh] flex items-center pt-24 pb-8 overflow-hidden bg-white">
+    <section className="relative min-h-[0] md:min-h-[85vh] flex items-center pt-32 pb-16 md:pt-24 md:pb-8 overflow-hidden bg-white">
       {/* Background Decor */}
       <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-40" />
       <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[1000px] h-[1000px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
           <div className="flex-1 text-left">
             <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[7.5rem] font-black mb-6 tracking-tighter leading-[0.85] text-black uppercase">
               {title || (
@@ -56,7 +56,7 @@ export function Hero({
             </div>
           </div>
 
-          <div className="flex-1 relative w-full h-[400px] md:h-[600px]">
+          <div className="flex-1 relative w-full h-[250px] lg:h-[600px] mt-8 lg:mt-0">
             {/* Elegant Image Container */}
             <div className="relative w-full h-full rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.15)] bg-gray-100 border-[12px] border-white group">
               <Image

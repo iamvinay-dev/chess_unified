@@ -25,7 +25,6 @@ export default async function HomePage() {
         description={content.hero.description}
         ctaPrimary={content.hero.ctaPrimary}
         ctaSecondary={content.hero.ctaSecondary}
-        logoUrl={content.logoUrl}
       />
       {sections.about && <About highlights={content.features} />}
       {sections.gallery && <Gallery images={content.gallery} />}

@@ -43,7 +43,7 @@ export function Contact({ info }: { info?: SiteContent['contact'] }) {
   ];
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-white overflow-hidden relative">
+    <section id="contact" className="py-16 md:py-32 bg-white overflow-hidden relative">
       <div className="container mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
           <div>

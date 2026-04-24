@@ -85,7 +85,7 @@ export default function EditSitePage() {
 
   return (
     <div className="space-y-8 pb-20">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between sticky top-0 bg-gray-50/80 backdrop-blur-md py-4 z-20 border-b gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between relative lg:sticky lg:top-0 bg-gray-50/80 backdrop-blur-md py-4 z-20 border-b gap-4">
         <div>
           <h1 className="text-2xl md:text-3xl font-bold">Edit Site Content</h1>
           <p className="text-xs md:text-sm text-gray-500">Customize text, images, and visibility.</p>

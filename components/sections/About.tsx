@@ -32,9 +32,9 @@ interface AboutProps {
 
 export function About({ highlights = [] }: AboutProps) {
   return (
-    <section id="about" className="py-32 bg-white border-y border-gray-50 scroll-mt-24">
+    <section id="about" className="py-16 lg:py-32 bg-white border-y border-gray-50 scroll-mt-24">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-24 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
             <h2 className="text-5xl md:text-7xl font-black mb-8 tracking-tighter uppercase leading-[0.85]">
               Academy <span className="text-primary italic">Life</span>

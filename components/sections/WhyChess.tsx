@@ -32,7 +32,7 @@ const benefits = [
 
 export function WhyChess() {
   return (
-    <section id="why" className="py-24 md:py-40 bg-white scroll-mt-24">
+    <section id="why" className="py-16 md:py-32 bg-white scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mb-24">
           <h2 className="text-5xl md:text-8xl font-black mb-10 tracking-tighter uppercase leading-[0.85]">
