@@ -8,7 +8,6 @@ const footerLinks = [
   { name: 'More Than a Game', href: '#why' },
   { name: 'Gallery', href: '#gallery' },
   { name: 'Contact', href: '#contact' },
-  { name: 'Admin Portal', href: '/admin' },
 ];
 
 const legalLinks = [
