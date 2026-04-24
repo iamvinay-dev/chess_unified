@@ -8,6 +8,7 @@ const footerLinks = [
   { name: 'More Than a Game', href: '#why' },
   { name: 'Gallery', href: '#gallery' },
   { name: 'Contact', href: '#contact' },
+  { name: 'Admin Portal', href: '/admin' },
 ];
 
 const legalLinks = [
@@ -41,7 +42,7 @@ export function Footer({ logoUrl }: { logoUrl?: string }) {
               </div>
             </Link>
             <p className="text-lg md:text-xl text-gray-400 max-w-sm leading-relaxed font-medium">
-              Empowering young minds through the strategic game of chess. Anantapur's premier destination for future champions and creative thinkers.
+              Empowering young minds through the strategic game of chess. Anantapur&apos;s premier destination for future champions and creative thinkers.
             </p>
           </div>
           <div>

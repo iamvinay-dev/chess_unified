@@ -51,6 +51,7 @@ export default function AdminTournamentsPage() {
   };
 
   React.useEffect(() => {
+    // eslint-disable-next-line
     fetchTournaments();
   }, []);
 

@@ -1,0 +1,213 @@
+
+> tmp-app@0.1.0 lint
+> eslint
+
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\(site)\privacy\page.tsx
+  27:187  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  46:83   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\(site)\tournaments\page.tsx
+  3:845  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  3:845  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\edit\page.tsx
+   15:3    warning  'Info' is defined but never used                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+   19:12   warning  'ImageIcon' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  121:21   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  224:105  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  224:115  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  224:120  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  224:126  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  266:52   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  266:69   error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  322:25   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  567:23   warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  642:25   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  642:38   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  642:64   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  642:80   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  642:115  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  642:134  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  650:26   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  650:31   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\media\page.tsx
+   7:3  warning  'Plus' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  11:3  warning  'ExternalLink' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+  12:3  warning  'X' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               @typescript-eslint/no-unused-vars
+  32:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\media\page.tsx:32:5
+  30 |
+  31 |   React.useEffect(() => {
+> 32 |     fetchData();
+     |     ^^^^^^^^^ Avoid calling setState() directly within an effect
+  33 |   }, []);
+  34 |
+  35 |   const saveChanges = async (newData: SiteContent) => {  react-hooks/set-state-in-effect
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\page.tsx
+   5:3   warning  'FileEdit' is defined but never used                             @typescript-eslint/no-unused-vars
+  64:94  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\settings\page.tsx
+    4:10  warning  'Settings' is defined but never used                             @typescript-eslint/no-unused-vars
+    4:28  warning  'Bell' is defined but never used                                 @typescript-eslint/no-unused-vars
+    4:54  warning  'Save' is defined but never used                                 @typescript-eslint/no-unused-vars
+   50:14  warning  'error' is defined but never used                                @typescript-eslint/no-unused-vars
+  165:64  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\students\page.tsx
+    7:3   warning  'PlusCircle' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-unused-vars
+   11:3   warning  'X' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+   19:10  warning  'saving' is assigned a value but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   24:5   error    Error: Cannot access variable before it is declared
+
+`fetchStudents` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\students\page.tsx:24:5
+  22 |
+  23 |   React.useEffect(() => {
+> 24 |     fetchStudents();
+     |     ^^^^^^^^^^^^^ `fetchStudents` accessed before it is declared
+  25 |   }, []);
+  26 |
+  27 |   const fetchStudents = async () => {
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\students\page.tsx:27:3
+  25 |   }, []);
+  26 |
+> 27 |   const fetchStudents = async () => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 28 |     try {
+     | ^^^^^^^^^
+> 29 |       const res = await fetch('/api/data/students');
+     …
+     | ^^^^^^^^^
+> 36 |     }
+     | ^^^^^^^^^
+> 37 |   };
+     | ^^^^^ `fetchStudents` is declared here
+  38 |
+  39 |   const handleSave = async (updatedStudents: Student[]) => {
+  40 |     setSaving(true);  react-hooks/immutability
+  145:97  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-explicit-any
+  216:26  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-explicit-any
+  236:24  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @typescript-eslint/no-explicit-any
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\tournaments\page.tsx
+  10:3  warning  'Globe' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  11:3  warning  'Lock' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 @typescript-eslint/no-unused-vars
+  12:3  warning  'ChevronRight' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         @typescript-eslint/no-unused-vars
+  54:5  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\tournaments\page.tsx:54:5
+  52 |
+  53 |   React.useEffect(() => {
+> 54 |     fetchTournaments();
+     |     ^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  55 |   }, []);
+  56 |
+  57 |   const handleOpenModal = (tournament?: Tournament) => {  react-hooks/set-state-in-effect
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\auth\update-password\route.ts
+  19:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\auth\verify\route.ts
+  24:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\data\site\route.ts
+  17:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\data\students\route.ts
+  17:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\data\tournaments\route.ts
+  20:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  36:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  49:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\admin\CloudinaryUpload.tsx
+   79:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  107:41  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  107:58  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  120:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  135:33  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  148:51  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\layout\Footer.tsx
+  28:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  45:84  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\layout\Header.tsx
+  51:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\About.tsx
+  50:18  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  50:57  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Contact.tsx
+    5:10  warning  'FormEvent' is defined but never used                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   55:79  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  107:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  129:24  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Franchise.tsx
+  4:54  warning  'Phone' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Hero.tsx
+   4:8   warning  'Link' is defined but never used         @typescript-eslint/no-unused-vars
+   6:30  warning  'Star' is defined but never used         @typescript-eslint/no-unused-vars
+   6:36  warning  'ShieldCheck' is defined but never used  @typescript-eslint/no-unused-vars
+  13:3   warning  'logoUrl' is defined but never used      @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Programs.tsx
+   4:44   warning  'ArrowRight' is defined but never used                           @typescript-eslint/no-unused-vars
+  44:114  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\SocialMedia.tsx
+  63:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Trainers.tsx
+  5:22  warning  'ExternalLink' is defined but never used   @typescript-eslint/no-unused-vars
+  5:36  warning  'GraduationCap' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\WhyChess.tsx
+   42:22  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+   42:41  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  116:17  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  116:53  error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\shared\ThemeToggle.tsx
+  12:5  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\shared\ThemeToggle.tsx:12:5
+  10 |
+  11 |   React.useEffect(() => {
+> 12 |     setMounted(true);
+     |     ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  13 |   }, []);
+  14 |
+  15 |   if (!mounted) {  react-hooks/set-state-in-effect
+
+✖ 82 problems (39 errors, 43 warnings)
+

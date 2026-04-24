@@ -1,0 +1,77 @@
+
+> tmp-app@0.1.0 lint
+> eslint
+
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\(site)\tournaments\page.tsx
+  3:845  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  3:845  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                jsx-a11y/alt-text
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\edit\page.tsx
+  121:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  267:52  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  267:69  error    `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`                                                                                                                                                                                                                          react/no-unescaped-entities
+  323:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  568:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\students\page.tsx
+   34:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\admin\(dashboard)\students\page.tsx:34:5
+  32 |
+  33 |   React.useEffect(() => {
+> 34 |     fetchStudents();
+     |     ^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  35 |   }, []);
+  36 |
+  37 |   const handleSave = async (updatedStudents: Student[]) => {  react-hooks/set-state-in-effect
+  142:97  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\auth\update-password\route.ts
+  19:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\auth\verify\route.ts
+  24:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\data\site\route.ts
+  17:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\data\students\route.ts
+  17:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\app\api\data\tournaments\route.ts
+  20:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  36:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+  49:12  warning  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\admin\CloudinaryUpload.tsx
+  79:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\layout\Footer.tsx
+  27:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\layout\Header.tsx
+  51:15  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Contact.tsx
+  106:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  128:24  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Franchise.tsx
+  4:54  warning  'Phone' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\SocialMedia.tsx
+  63:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\mrvin\OneDrive\Desktop\clients projects\unifies chess\components\sections\Trainers.tsx
+  5:22  warning  'ExternalLink' is defined but never used   @typescript-eslint/no-unused-vars
+  5:36  warning  'GraduationCap' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 25 problems (4 errors, 21 warnings)
+

@@ -9,19 +9,24 @@ import {
   Trophy,
   Image as ImageIcon,
   LogOut,
-import {
-  LayoutDashboard,
-  FileEdit,
-  Trophy,
-  Image as ImageIcon,
-  LogOut,
   ChevronLeft,
   ChevronRight,
   Monitor,
   Settings,
   Menu,
-  X
+  X,
+  Users
 } from 'lucide-react';
+import { cn } from '@/lib/utils';
+
+const menuItems = [
+  { name: 'Dashboard', href: '/admin', icon: LayoutDashboard },
+  { name: 'Edit Content', href: '/admin/edit', icon: FileEdit },
+  { name: 'Students', href: '/admin/students', icon: Users },
+  { name: 'Tournaments', href: '/admin/tournaments', icon: Trophy },
+  { name: 'Media Library', href: '/admin/media', icon: ImageIcon },
+  { name: 'Settings', href: '/admin/settings', icon: Settings },
+];
 
 export function AdminSidebar() {
   const pathname = usePathname();

@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import { Mail, Phone, MapPin, Camera, Globe, Video, MessageCircle } from 'lucide-react';
-import { FormEvent } from 'react';
 import { WhatsAppEnrollForm } from '@/components/forms/WhatsAppEnrollForm';
 import { SiteContent } from '@/lib/types';
 
@@ -52,7 +51,7 @@ export function Contact({ info }: { info?: SiteContent['contact'] }) {
               Start Your <span className="text-primary italic">Journey</span>
             </h2>
             <p className="text-xl text-gray-500 mb-16 max-w-lg leading-relaxed font-medium">
-              Reach out to enroll, ask questions, or schedule a free trial. We're always happy to help shape the next generation of players.
+              Reach out to enroll, ask questions, or schedule a free trial. We&apos;re always happy to help shape the next generation of players.
             </p>
 
             <div className="space-y-12">

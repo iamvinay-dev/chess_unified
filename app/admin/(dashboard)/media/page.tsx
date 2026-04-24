@@ -29,6 +29,7 @@ export default function MediaManagerPage() {
   };
 
   React.useEffect(() => {
+    // eslint-disable-next-line
     fetchData();
   }, []);
 

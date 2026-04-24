@@ -39,7 +39,7 @@ export function WhyChess() {
             More Than <span className="text-primary italic">a Game</span>
           </h2>
           <p className="text-2xl md:text-3xl text-gray-400 font-medium leading-relaxed max-w-2xl">
-            Chess isn't just a game — it's a developmental powerhouse. We cultivate intellectual strength that transcends the 64 squares.
+            Chess isn&apos;t just a game — it&apos;s a developmental powerhouse. We cultivate intellectual strength that transcends the 64 squares.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export function WhyChess() {
             <div>
               <div className="text-6xl md:text-9xl font-black mb-4 md:mb-8 opacity-20 leading-none">“</div>
               <h3 className="text-3xl md:text-6xl font-black mb-8 md:mb-12 italic leading-[1.1] tracking-tighter">
-                "Chess is the gymnasium of the mind."
+                &quot;Chess is the gymnasium of the mind.&quot;
               </h3>
               <p className="text-lg md:text-2xl text-white/80 font-medium leading-relaxed mb-10 md:mb-12">
                 Scientific research confirms that children immersed in chess demonstrate remarkable growth in cognitive flexibility and academic performance.

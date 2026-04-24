@@ -221,7 +221,7 @@ export default function EditSitePage() {
               <h2 className="text-xl font-bold">Home Highlights (Features)</h2>
             </div>
             <div className="space-y-4">
-               <p className="text-xs text-gray-400 mb-4 font-medium italic">These bullets appear in the 'Why Chess' or 'About' sections to highlight your core offerings.</p>
+               <p className="text-xs text-gray-400 mb-4 font-medium italic">These bullets appear in the &apos;Why Chess&apos; or &apos;About&apos; sections to highlight your core offerings.</p>
                {(data.features || []).map((feature, idx) => (
                  <div key={idx} className="flex gap-2">
                    <input
@@ -263,7 +263,7 @@ export default function EditSitePage() {
             
             {!data.socialMediaSection && (
                <div className="p-4 bg-yellow-50 text-yellow-800 rounded-xl mb-6 text-sm font-bold">
-                  Legacy data detected. Please hit "Save All Changes" once to initialize the Social Media structure.
+                  Legacy data detected. Please hit &quot;Save All Changes&quot; once to initialize the Social Media structure.
                </div>
             )}
             
@@ -639,7 +639,7 @@ export default function EditSitePage() {
             <div className="text-xs text-gray-600 leading-relaxed space-y-4">
               <div>
                 <strong className="text-gray-900 block mb-1">🏠 Home & About Sections:</strong>
-                <p>Edit 'Hero Section' for the home banner and 'Home Highlights' for the feature list. Toggles in 'Section Visibility' control what your customers see first.</p>
+                <p>Edit &apos;Hero Section&apos; for the home banner and &apos;Home Highlights&apos; for the feature list. Toggles in &apos;Section Visibility&apos; control what your customers see first.</p>
               </div>
               <div>
                 <strong className="text-gray-900 block mb-1">🛒 Merchandise Store:</strong>
@@ -647,7 +647,7 @@ export default function EditSitePage() {
               </div>
               <div>
                 <strong className="text-gray-900 block mb-1">📅 Permanent Changes:</strong>
-                <p>Every 'Save' updates `lib/data/siteContent.json` permanently. No code deployments needed for text or images.</p>
+                <p>Every &apos;Save&apos; updates `lib/data/siteContent.json` permanently. No code deployments needed for text or images.</p>
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           <section className="space-y-4">
             <h2 className="text-2xl md:text-3xl font-black text-black">1. Information We Collect</h2>
             <p className="text-gray-500 leading-relaxed font-medium">
-              We collect information that you explicitly provide to us when inquiring or enrolling through our forms. This includes your name, phone number, email address, and your child's age bracket. This data is leveraged strictly to facilitate our chess educational services.
+              We collect information that you explicitly provide to us when inquiring or enrolling through our forms. This includes your name, phone number, email address, and your child&apos;s age bracket. This data is leveraged strictly to facilitate our chess educational services.
             </p>
           </section>
 
@@ -43,7 +43,7 @@ export default function PrivacyPage() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-black text-black">4. Children's Privacy Guidelines</h2>
+            <h2 className="text-2xl md:text-3xl font-black text-black">4. Children&apos;s Privacy Guidelines</h2>
             <p className="text-gray-500 leading-relaxed font-medium">
               We explicitly collect scheduling and enrollment data strictly through parents or legal guardians. We never knowingly prompt or aggregate data directly from children without legally bound supervision.
             </p>

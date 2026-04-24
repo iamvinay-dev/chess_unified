@@ -104,6 +104,7 @@ export function CloudinaryUpload({
                         sources: ['local', 'url'],
                         maxFileSize: 10000000, 
                     }}
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     onSuccess={(result: any, { widget }: any) => {
                         setUploadError(null);
                         if (result.info?.secure_url) {
@@ -117,6 +118,7 @@ export function CloudinaryUpload({
                             widget.close();
                         }
                     }}
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                     onError={(error: any) => {
                         // Detect common preset misconfiguration
                         const isPresetError =
@@ -132,6 +134,7 @@ export function CloudinaryUpload({
                         setUploadError(msg);
                     }}
                 >
+                    {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
                     {({ open }: any) => {
                         return (
                             <button
@@ -145,6 +148,7 @@ export function CloudinaryUpload({
                                         } else {
                                             setUploadError('Widget is loading... Please wait a second and try again.');
                                         }
+                                    // eslint-disable-next-line @typescript-eslint/no-explicit-any
                                     } catch (err: any) {
                                         console.error('Cloudinary open error:', err);
                                         setUploadError('Upload widget disconnected. Please refresh the page and try again.');

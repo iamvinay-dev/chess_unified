@@ -1,7 +1,7 @@
 'use client';
 
 import * as React from 'react';
-import { CheckCircle2, Star, Clock, Users, ArrowRight } from 'lucide-react';
+import { CheckCircle2, Star, Clock, Users } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const programs = [
@@ -41,7 +41,7 @@ export function Programs() {
             Master <span className="text-primary italic">Every</span> Level
           </h2>
           <p className="text-base md:text-lg text-gray-500 font-medium leading-relaxed">
-            From first moves to grandmaster strategies, our tiered programs are designed to scale with your child's ambition.
+            From first moves to grandmaster strategies, our tiered programs are designed to scale with your child&apos;s ambition.
           </p>
         </div>
 

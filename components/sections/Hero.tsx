@@ -1,22 +1,19 @@
 'use client';
 
 import * as React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Trophy, Star, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Trophy } from 'lucide-react';
 
 export function Hero({
   title,
   description,
   ctaPrimary,
   ctaSecondary,
-  logoUrl,
 }: {
   title?: string;
   description?: string;
   ctaPrimary?: string;
   ctaSecondary?: string;
-  logoUrl?: string;
 }) {
   return (
     <section className="relative min-h-[85vh] flex items-center pt-24 pb-8 overflow-hidden bg-white">

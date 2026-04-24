@@ -61,7 +61,7 @@ export default function AdminDashboard() {
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
         <div>
           <h1 className="text-4xl font-bold mb-2">Admin Dashboard</h1>
-          <p className="text-gray-500">Quickly navigate to manage all aspects of your academy's website.</p>
+          <p className="text-gray-500">Quickly navigate to manage all aspects of your academy&apos;s website.</p>
         </div>
       </div>
 

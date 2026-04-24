@@ -162,7 +162,7 @@ export default function AdminSettingsPage() {
                Security Tip
             </h3>
             <p className="text-xs text-gray-500 leading-relaxed font-medium">
-              We recommend using a strong password that you don't use anywhere else. Your credentials are encrypted during transmission but stored securely on our servers for authentication.
+              We recommend using a strong password that you don&apos;t use anywhere else. Your credentials are encrypted during transmission but stored securely on our servers for authentication.
             </p>
           </section>
         </div>

@@ -41,13 +41,13 @@ export function About({ highlights = [] }: AboutProps) {
             </h2>
             <div className="space-y-6">
               <p className="text-xl text-gray-500 font-medium leading-relaxed">
-                Chess Unified offers structured coaching from beginner to advanced levels, focusing on strategy, concentration, and critical thinking.
+                &quot;Chess is the gymnasium of the mind.&quot; Chess Unified offers structured coaching from beginner to advanced levels, focusing on strategy, concentration, and critical thinking.
               </p>
               <p className="text-lg text-gray-400 leading-relaxed font-medium">
                 We provide personalized training, practice sessions, and tournament guidance to help players succeed at district, state, and national levels.
               </p>
               <blockquote className="border-l-4 border-primary pl-4 py-2 mt-4 text-primary font-black italic tracking-widest uppercase text-sm">
-                 "Think Smart. Play Sharp. Grow Unified."
+                 &quot;Think Smart. Play Sharp. Grow Unified.&quot;
               </blockquote>
             </div>
 
